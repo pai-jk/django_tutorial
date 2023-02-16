@@ -1,0 +1,10 @@
+{% extends 'hello/base.html' %}
+{% block content %}
+    {% for post in posts%}
+    <div>
+        <h3><a href="{% url 'hello:post_detail' pk=post.pk %}">{{post.title}}</a></h3>
+        <p>author: {{post.author}}</p>
+        <p>create data: {{post.created_date}}</p>
+    </div>
+    {% endfor %}
+{% endblock %}

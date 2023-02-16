@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Board</title>
+</head>
+<body>
+<div>
+    <h1>
+        <a href="{% url 'hello:post_list'%}"> Django Board Base</a>
+    </h1>
+</div>
+
+<div>
+    <h1>
+        <a href="{% url 'hello:post_new'%}">new</a>
+    </h1>
+</div>
+{% block content %}
+
+
+{% endblock %}
+
+</body>
+</html>
