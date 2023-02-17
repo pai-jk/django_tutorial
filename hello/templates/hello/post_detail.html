@@ -6,4 +6,6 @@
         <p>text: {{post.text}}</p>
         <p>create data: {{post.created_date}}</p>
     </div>
+    <h4>
+        <a href="{% url 'hello:post_edit' pk=post.pk %}"> edit post </a></h4>
 {% endblock %}
